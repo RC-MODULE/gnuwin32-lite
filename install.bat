@@ -32,7 +32,7 @@ bin\unzip -p cecho-master.zip cecho-master\cecho\bin\Release\cecho.exe  > "%GNUW
 @goto end
 
 :add2path
-@rem Script adds full path from %1 argument to %PATH% system environment variable
+@rem Script adds full path of %1 argument to %PATH% system environment variable
 @echo off
 set Key=HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
 set folderToAdd="%~f1\bin"

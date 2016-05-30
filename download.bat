@@ -1,5 +1,4 @@
-set https_proxy=http://mushkaev:sergpasw@proxy:80
-set  http_proxy=http://mushkaev:sergpasw@proxy:80
+if ".%WGETRC%"=="." set WGETRC=%CD%\mywget.ini
 
 bin\wget -nc http://sourceforge.net/projects/gnuwin32/files/coreutils/5.3.0/coreutils-5.3.0-bin.zip
 bin\wget -nc http://sourceforge.net/projects/gnuwin32/files/coreutils/5.3.0/coreutils-5.3.0-dep.zip
