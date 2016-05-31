@@ -1,8 +1,8 @@
 # GnuWin32-Lite installer
  
-Lite package of [GnuWin32](http://gnuwin32.sourceforge.net/)  tools needed for RC-Module product building would be installed . 
+Online installer of small set of [GnuWin32](http://gnuwin32.sourceforge.net/) tools needed for RC-Module product building. 
 
-## List of packages:
+## List of included packages:
 -coreutils-5.3.0
 -diffutils-2.8.7-1
 -findutils-4.2.20-2
@@ -15,13 +15,14 @@ Lite package of [GnuWin32](http://gnuwin32.sourceforge.net/)  tools needed for R
 -putty
 -cecho
 
-> Полный пакет GnuWin32 утилит (600MB) можно установить с помощью инсталлятора [GetGnuWin32-0.6.3.exe] с сайта https://sourceforge.net/projects/getgnuwin32/
+> Online installer of all GnuWin32 tools (~600MB) is available at https://sourceforge.net/projects/getgnuwin32/
 
 ## Installation
-Download [GnuWin32-lite](https://github.com/RC-MODULE/gnuwin32-lite/archive/master.zip) installer.  
-Exract archive and open a command window, switch to the GnuWin32-lite directory and run download.bat.  
-If you are behind proxy define your proxy settings in .\wget.ini or add environment variables **http_proxy** and **https_proxy**  to your system.
-If download.bat completes successfully you will be able to run the installer with path where to install gnuwin32. 
+Download [GnuWin32-lite](https://github.com/RC-MODULE/gnuwin32-lite/archive/master.zip) installer.    
+Extract archive and open a command window, switch to the GnuWin32-lite directory and run download.bat.   
+If you are behind proxy define your proxy settings in .\wget.ini or add environment variables **http_proxy** and **https_proxy**  to your system.  
+If download.bat completes successfully you will be able to run the installer with a path where to install gnuwin32.   
+
 For example: 
 ```bat
 C:\gnuwin32-lite-mater>set  http_proxy=http://username:password@proxy:80/
