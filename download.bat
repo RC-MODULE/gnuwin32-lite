@@ -1,4 +1,4 @@
-if ".%WGETRC%"=="." set WGETRC=%CD%\mywget.ini
+if ".%WGETRC%"=="." set WGETRC=%CD%\wget.ini
 
 bin\wget -nc http://sourceforge.net/projects/gnuwin32/files/coreutils/5.3.0/coreutils-5.3.0-bin.zip
 bin\wget -nc http://sourceforge.net/projects/gnuwin32/files/coreutils/5.3.0/coreutils-5.3.0-dep.zip
