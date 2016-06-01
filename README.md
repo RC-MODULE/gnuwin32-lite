@@ -1,6 +1,6 @@
 # GnuWin32-Lite installer
  
-Online installer of small set of [GnuWin32](http://gnuwin32.sourceforge.net/) tools needed for RC-Module product building. 
+Online installer of small set of [GnuWin32](http://gnuwin32.sourceforge.net/) tools needed for RC-Module project buildings under Windows OS. 
 
 ## List of included packages:
   - coreutils-5.3.0
@@ -10,12 +10,13 @@ Online installer of small set of [GnuWin32](http://gnuwin32.sourceforge.net/) to
   - make-3.81
   - tar-1.13-1
   - unzip-5.51-1
+  - gzip-1.3.12-1
   - wget-1.11.4-1
   - 7zip-9.20
   - putty
   - cecho
 
-> Online installer of all GnuWin32 tools (~600MB) is available at https://sourceforge.net/projects/getgnuwin32/
+> Online full-package installer of all GnuWin32 tools (~600MB) is available at https://sourceforge.net/projects/getgnuwin32/
 
 ## Installation
 Download [GnuWin32-lite](https://github.com/RC-MODULE/gnuwin32-lite/archive/master.zip) installer.    
