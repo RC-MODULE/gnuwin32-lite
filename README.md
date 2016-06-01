@@ -2,7 +2,7 @@
  
 Online installer of small set of [GnuWin32](http://gnuwin32.sourceforge.net/) tools needed for RC-Module project buildings under Windows OS. 
 
-## List of included packages:
+## List of downloading packages:
   - coreutils-5.3.0
   - diffutils-2.8.7-1
   - findutils-4.2.20-2
@@ -18,15 +18,15 @@ Online installer of small set of [GnuWin32](http://gnuwin32.sourceforge.net/) to
 
 > Online full-package installer of all GnuWin32 tools (~600MB) is available at https://sourceforge.net/projects/getgnuwin32/
 
-## Installation
+## Starting
 Download [GnuWin32-lite](https://github.com/RC-MODULE/gnuwin32-lite/archive/master.zip) installer.    
-Extract archive and open a command window, switch to the *gnuwin32-lite* directory and run download.bat.   
+Extract archive and open a command window, switch to the *gnuwin32-lite* directory and run *download.bat*   
 If you are behind proxy you have three choices how to start download:
   - A. Define your proxy settings in *.\wget.ini*  
   - B. Set environment variables **http_proxy** and **https_proxy** (with no spaces around =)
   - C. Start *download.bat* with *-powershell* option  
 
-If download.bat completes successfully you will be able to run the installer with a path where to install gnuwin32.   
+If *download.bat* completes successfully you will be able to run the installer with a path where to install gnuwin32.   
 
 For example: 
 ```bat
