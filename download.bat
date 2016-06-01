@@ -6,7 +6,7 @@ IF "%1" == "-powershell" (
 	set WGET=powershell  -ExecutionPolicy Bypass -file wget.ps1 
 	
 ) ELSE (
-	@echo  Downloading by wget started ...
+	@echo  Downloading by GNU wget started ...
 	set WGET=bin\wget -nc
 )
 
