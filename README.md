@@ -20,8 +20,12 @@ Online installer of small set of [GnuWin32](http://gnuwin32.sourceforge.net/) to
 
 ## Installation
 Download [GnuWin32-lite](https://github.com/RC-MODULE/gnuwin32-lite/archive/master.zip) installer.    
-Extract archive and open a command window, switch to the GnuWin32-lite directory and run download.bat.   
-If you are behind proxy define your proxy settings in .\wget.ini or add environment variables **http_proxy** and **https_proxy**  to your system.  
+Extract archive and open a command window, switch to the *gnuwin32-lite* directory and run download.bat.   
+If you are behind proxy you have three choices how to start download:
+  - A. Define your proxy settings in *.\wget.ini*  
+  - B. Add environment variables **http_proxy** and **https_proxy**  to your system.  
+  - C. Start *download.bat* with *-powershell* option  
+
 If download.bat completes successfully you will be able to run the installer with a path where to install gnuwin32.   
 
 For example: 
