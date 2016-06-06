@@ -7,7 +7,7 @@ IF "%1" == "-powershell" (
 	
 ) ELSE (
 	@echo  Downloading by GNU wget started ...
-	set WGET=bin\wget -nc
+	set WGET=bin\wget -nc --no-check-certificate 
 )
 
 
