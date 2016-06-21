@@ -1,4 +1,5 @@
 set GNUWIN32_INSTALL_DIRECTORY=%1
+if "%GNUWIN32_INSTALL_DIRECTORY%"=="" set GNUWIN32_INSTALL_DIRECTORY=.\
 bin\unzip -u -o -q bin\myaddons.zip -d "%GNUWIN32_INSTALL_DIRECTORY%" >NUL 2>&1
 
 bin\unzip -u -o -q -d "%GNUWIN32_INSTALL_DIRECTORY%" coreutils-5.3.0-bin.zip
@@ -21,6 +22,14 @@ bin\unzip -u -o -q -d "%GNUWIN32_INSTALL_DIRECTORY%" unzip-5.51-1-bin.zip
 bin\unzip -p master.zip cecho-master\cecho\bin\Release\cecho.exe  > "%GNUWIN32_INSTALL_DIRECTORY%"\bin\cecho.exe
 bin\unzip -u -o -q -d "%GNUWIN32_INSTALL_DIRECTORY%"\bin 7za920.zip 
 bin\unzip -u -o -q -d "%GNUWIN32_INSTALL_DIRECTORY%"\bin putty.zip 
+bin\unzip -p pkg-config-lite-0.28-1_bin-win32.zip pkg-config-lite-0.28-1\bin\pkg-config.exe   > "%GNUWIN32_INSTALL_DIRECTORY%"\bin\pkg-config.exe
+bin\unzip -u -o -q -d "%GNUWIN32_INSTALL_DIRECTORY%"\bin putty.zip 
+bin\unzip -u -o -q -d "%GNUWIN32_INSTALL_DIRECTORY%" cmake-3.5.2-win32-x86
+set path=%path%;"%GNUWIN32_INSTALL_DIRECTORY%"\bin
+rm "%GNUWIN32_INSTALL_DIRECTORY%"\cmake-3.5.2-win32-x86\bin "%GNUWIN32_INSTALL_DIRECTORY%"\bin -r -f
+rm "%GNUWIN32_INSTALL_DIRECTORY%"\cmake-3.5.2-win32-x86\doc "%GNUWIN32_INSTALL_DIRECTORY%"\doc -r -f
+rmdir "%GNUWIN32_INSTALL_DIRECTORY%"\cmake-3.5.2-win32-x86 /S /Q
+
 
 @echo Your current PATH is 
 @path

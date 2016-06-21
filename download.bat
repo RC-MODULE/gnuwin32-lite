@@ -31,5 +31,9 @@ IF "%1" == "-powershell" (
 @set WGET=%WGET% https://github.com/elisherer/cecho/archive/master.zip
 @set WGET=%WGET% http://tartarus.org/~simon/putty-snapshots/x86/putty.zip
 @set WGET=%WGET% http://www.7-zip.org/a/7za920.zip
+@set WGET=%WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip
+@set WGET=%WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip
+@set WGET=%WGET% https://cmake.org/files/v3.5/cmake-3.5.2-win32-x86.zip
+
 
 %WGET%
