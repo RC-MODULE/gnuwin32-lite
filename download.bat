@@ -7,7 +7,7 @@ IF "%1" == "-powershell" (
 	
 ) ELSE (
 	@echo  Downloading by GNU wget started ...
-	set WGET=bin\wget -nc --no-check-certificate 
+	set WGET=bin\wget -nc --no-check-certificate
 )
 
 
@@ -33,7 +33,9 @@ IF "%1" == "-powershell" (
 @set WGET=%WGET% http://www.7-zip.org/a/7za920.zip
 @set WGET=%WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip
 @set WGET=%WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip
+@set WGET=%WGET% http://www.codeproject.com/KB/applications/SetEnv/SetEnv_exe.zip
 @set WGET=%WGET% https://cmake.org/files/v3.5/cmake-3.5.2-win32-x86.zip
+
 
 
 %WGET%

@@ -15,6 +15,8 @@ Online installer of small set of [GnuWin32](http://gnuwin32.sourceforge.net/) to
   - 7zip-9.20
   - putty
   - cecho
+  - pkg-config
+  - cmake
 
 > Online full-package installer of all GnuWin32 tools (~600MB) is available at https://sourceforge.net/projects/getgnuwin32/
 
