@@ -3,20 +3,21 @@
 Online installer of small set of [GnuWin32](http://gnuwin32.sourceforge.net/) tools needed for RC-Module project buildings under Windows OS. 
 
 ## List of downloading packages:
-  - coreutils-5.3.0
-  - diffutils-2.8.7-1
-  - findutils-4.2.20-2
-  - grep-2.5.4
-  - make-3.81
-  - tar-1.13-1
-  - unzip-5.51-1
-  - gzip-1.3.12-1
-  - wget-1.11.4-1
-  - 7zip-9.20
-  - putty
-  - cecho
-  - pkg-config
-  - cmake
+  - [coreutils](http://gnuwin32.sourceforge.net/packages/coreutils.htm)
+  - [diffutils](http://gnuwin32.sourceforge.net/packages/diffutils.htm)
+  - [findutils](http://gnuwin32.sourceforge.net/packages/findutils.htm)
+  - [grep](http://gnuwin32.sourceforge.net/packages/grep.htm)
+  - [make-3.81](http://gnuwin32.sourceforge.net/packages/make.htm)
+  - [tar](http://gnuwin32.sourceforge.net/packages/gtar.htm)
+  - [unzip](http://gnuwin32.sourceforge.net/packages/unzip.htm)
+  - [gzip](http://gnuwin32.sourceforge.net/packages/gzip.htm)
+  - [wget](http://gnuwin32.sourceforge.net/packages/wget.htm)
+  - [7zip-9.20](http://www.7-zip.org)
+  - [putty/pscp[(http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+  - [cecho](https://github.com/elisherer/cecho)
+  - [pkg-config](https://sourceforge.net/projects/pkgconfiglite/files/)
+  - [cmake](https://cmake.org)
+  - [setenv](http://www.codeproject.com/Articles/12153/SetEnv)
 
 > Online full-package installer of all GnuWin32 tools (~600MB) is available at https://sourceforge.net/projects/getgnuwin32/
 
@@ -32,9 +33,9 @@ If *download.bat* completes successfully you will be able to run the installer w
 
 For example: 
 ```bat
-C:\gnuwin32-lite-mater>set  http_proxy=http://username:password@proxy:80/
-C:\gnuwin32-lite-mater>set https_proxy=http://username:password@proxy:80/
-C:\gnuwin32-lite-mater>download 
-C:\gnuwin32-lite-mater>install C:\gnuwin32 
+C:\gnuwin32-lite-master>set  http_proxy=http://username:password@proxy:80/
+C:\gnuwin32-lite-master>set https_proxy=http://username:password@proxy:80/
+C:\gnuwin32-lite-master>download 
+C:\gnuwin32-lite-master>install C:\gnuwin32 
 ```
 
