@@ -1,4 +1,4 @@
-# GnuWin32-Lite installer
+# [GnuWin32-Lite installer](https://github.com/RC-MODULE/gnuwin32-lite)
  
 Online installer of small set of [GnuWin32](http://gnuwin32.sourceforge.net/) tools needed for RC-Module project buildings under Windows OS. 
 
@@ -13,8 +13,8 @@ Online installer of small set of [GnuWin32](http://gnuwin32.sourceforge.net/) to
   - [gzip](http://gnuwin32.sourceforge.net/packages/gzip.htm)
   - [wget](http://gnuwin32.sourceforge.net/packages/wget.htm)
   - [7zip-9.20](http://www.7-zip.org)
-  - [putty/pscp[(http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
-  - [cecho](https://github.com/elisherer/cecho)
+  - [putty/pscp](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+  - [cecho](https://github.com/elisherer/cecho) - colorized echo
   - [pkg-config](https://sourceforge.net/projects/pkgconfiglite/files/)
   - [cmake](https://cmake.org)
   - [setenv](http://www.codeproject.com/Articles/12153/SetEnv)
