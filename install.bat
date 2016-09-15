@@ -23,13 +23,14 @@ bin\unzip -p master.zip cecho-master\cecho\bin\Release\cecho.exe  > %GNUWIN32_IN
 bin\unzip -p pkg-config-lite-0.28-1_bin-win32.zip pkg-config-lite-0.28-1\bin\pkg-config.exe   > %GNUWIN32_INSTALL_DIRECTORY%\bin\pkg-config.exe
 bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% cmake-3.5.2-win32-x86.zip
 copy .\bin\setenv.exe %GNUWIN32_INSTALL_DIRECTORY%\bin
+copy %GNUWIN32_INSTALL_DIRECTORY%\bin\find.exe %GNUWIN32_INSTALL_DIRECTORY%\bin\gfind.exe
 
 xcopy %GNUWIN32_INSTALL_DIRECTORY%\cmake-3.5.2-win32-x86\*.* %GNUWIN32_INSTALL_DIRECTORY%  /E /Q /Y
 rmdir %GNUWIN32_INSTALL_DIRECTORY%\cmake-3.5.2-win32-x86 /S /Q
 
 @echo Your current PATH is 
 @path
-@echo.
+@echo. GnuWin32-lite instalation completed!
 @set /P x=Do you want to add "%GNUWIN32_INSTALL_DIRECTORY%\bin" folder to the PATH environment variable? (y/n)?
 @set x=%x:~0,1%
 @if (%x%)==(y) goto add2path 
