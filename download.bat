@@ -1,15 +1,21 @@
-if ".%WGETRC%"=="." set WGETRC=%CD%\wget.ini
+@echo off
+echo This will download GnuWin32-lite packeages to the current directory
 
+choice /M "Do you have proxy server?"
+if errorlevel 2 goto start 
 
-IF "%1" == "-powershell" (
-	@echo Downloading by PowerShell started ...
-	set WGET=powershell  -ExecutionPolicy Bypass -file wget.ps1 
-	
-) ELSE (
-	@echo  Downloading by GNU wget started ...
-	set WGET=bin\wget -nc --no-check-certificate
-)
+set /p proxy="Enter proxy:port "
+set /p login="Enter login:"
+set "psCommand=powershell -Command "$pword = read-host 'Enter Password' -AsSecureString ; ^
+    $BSTR=[System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($pword); ^
+        [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)""
+for /f "usebackq delims=" %%p in (`%psCommand%`) do set password=%%p
+set http_proxy=http://%login%:%password%@%proxy%
+set https_proxy=https://%login%:%password%@%proxy%
 
+:start
+
+set WGET=bin\wget -nc --no-check-certificate
 
 @set WGET=%WGET% http://sourceforge.net/projects/gnuwin32/files/coreutils/5.3.0/coreutils-5.3.0-bin.zip
 @set WGET=%WGET% http://sourceforge.net/projects/gnuwin32/files/coreutils/5.3.0/coreutils-5.3.0-dep.zip
@@ -35,6 +41,7 @@ IF "%1" == "-powershell" (
 @set WGET=%WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip
 @set WGET=%WGET% http://www.codeproject.com/KB/applications/SetEnv/SetEnv_exe.zip
 @set WGET=%WGET% https://cmake.org/files/v3.5/cmake-3.5.2-win32-x86.zip
+rem @set WGET=%WGET% ftp://ftp.zlatkovic.com/libxml/libxml2-2.7.8.win32.zip
 
 
 

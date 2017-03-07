@@ -24,6 +24,7 @@ bin\unzip -p pkg-config-lite-0.28-1_bin-win32.zip pkg-config-lite-0.28-1\bin\pkg
 bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% cmake-3.5.2-win32-x86.zip
 copy .\bin\setenv.exe %GNUWIN32_INSTALL_DIRECTORY%\bin
 copy %GNUWIN32_INSTALL_DIRECTORY%\bin\find.exe %GNUWIN32_INSTALL_DIRECTORY%\bin\gfind.exe
+copy %GNUWIN32_INSTALL_DIRECTORY%\bin\libiconv2.dll %GNUWIN32_INSTALL_DIRECTORY%\bin\libiconv-2.dll
 
 xcopy %GNUWIN32_INSTALL_DIRECTORY%\cmake-3.5.2-win32-x86\*.* %GNUWIN32_INSTALL_DIRECTORY%  /E /Q /Y
 rmdir %GNUWIN32_INSTALL_DIRECTORY%\cmake-3.5.2-win32-x86 /S /Q
