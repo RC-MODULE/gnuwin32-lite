@@ -1,9 +1,10 @@
 @echo off
 echo This will download GnuWin32-lite packeages to the current directory
-
+ping vmproxy1.module.ru -n 1 > proxy.test
+if  %ERRORLEVEL%==0 set bypass_rcm_proxy=--no-proxy
+echo %bypass_rcm_proxy%
 choice /M "Do you have proxy server?"
 if errorlevel 2 goto start 
-
 
 set /p login="Enter login:"
 set "psCommand=powershell -Command "$pword = read-host 'Enter Password' -AsSecureString ; ^
@@ -11,7 +12,7 @@ set "psCommand=powershell -Command "$pword = read-host 'Enter Password' -AsSecur
         [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)""
 for /f "usebackq delims=" %%p in (`%psCommand%`) do set password=%%p
 set /p proxy="Enter proxy:port "
-set http_proxy=http://%login%:%password%@%proxy%
+set  http_proxy=http://%login%:%password%@%proxy%
 set https_proxy=https://%login%:%password%@%proxy%
 
 :start
@@ -43,8 +44,7 @@ set WGET=bin\wget -nc --no-check-certificate
 @set WGET=%WGET% http://www.codeproject.com/KB/applications/SetEnv/SetEnv_exe.zip
 @set WGET=%WGET% https://cmake.org/files/v3.5/cmake-3.5.2-win32-x86.zip
 rem @set WGET=%WGET% https://winscp.net/download/WinSCP-5.9.4-Portable.zip
-rem $(OS_WGET)  http://www.module.ru/mb7707/soft/libxslt-1.1.26.win32.zip $(NOPROXY)
-
+rem @set WGET=%WGET%  http://www.module.ru/mb7707/soft/libxslt-1.1.26.win32.zip %bypass_rcm_proxy% 
 
 
 
