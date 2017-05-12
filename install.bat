@@ -41,8 +41,17 @@ rmdir %GNUWIN32_INSTALL_DIRECTORY%\cmake-3.5.2-win32-x86 /S /Q
 @goto end
 
 :add2path
+chcp 1251
 %GNUWIN32_INSTALL_DIRECTORY%\bin\setenv -a path %%%GNUWIN32_INSTALL_DIRECTORY%\bin
-
+if %ERRORLEVEL% (
+	echo Acces denied to modify PATH variable in system-space
+	echo Trying to modify PATH in user-space...
+	%GNUWIN32_INSTALL_DIRECTORY%\bin\setenv -ua path %%%GNUWIN32_INSTALL_DIRECTORY%\bin
+	if %ERRORLEVEL% EQU 0 echo Done!
+)
+else (
+	echo Done!
+)
 :end
 
 
