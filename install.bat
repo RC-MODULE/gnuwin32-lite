@@ -31,26 +31,22 @@ copy %GNUWIN32_INSTALL_DIRECTORY%\bin\libiconv2.dll %GNUWIN32_INSTALL_DIRECTORY%
 xcopy %GNUWIN32_INSTALL_DIRECTORY%\cmake-3.5.2-win32-x86\*.* %GNUWIN32_INSTALL_DIRECTORY%  /E /Q /Y
 rmdir %GNUWIN32_INSTALL_DIRECTORY%\cmake-3.5.2-win32-x86 /S /Q
 
-@echo Your current PATH is 
-@path
-@echo. GnuWin32-lite instalation completed!
-@set /P x=Do you want to add "%GNUWIN32_INSTALL_DIRECTORY%\bin" folder to the PATH environment variable? (y/n)?
-@set x=%x:~0,1%
-@if (%x%)==(y) goto add2path 
-@if (%x%)==(Y) goto add2path 
-@goto end
+@echo GnuWin32-lite installation completed!
+@choice /M "Do you want to add "%GNUWIN32_INSTALL_DIRECTORY%\bin" folder to the PATH environment variable"
+@if errorlevel 2 goto end 
 
-:add2path
-chcp 1251
-%GNUWIN32_INSTALL_DIRECTORY%\bin\setenv -a path %%%GNUWIN32_INSTALL_DIRECTORY%\bin
-if %ERRORLEVEL% (
-	echo Acces denied to modify PATH variable in system-space
-	echo Trying to modify PATH in user-space...
-	%GNUWIN32_INSTALL_DIRECTORY%\bin\setenv -ua path %%%GNUWIN32_INSTALL_DIRECTORY%\bin
-	if %ERRORLEVEL% EQU 0 echo Done!
-)
-else (
-	echo Done!
+.\bin\setenv -a path %%%GNUWIN32_INSTALL_DIRECTORY%\bin >NUL
+@if errorlevel 1 (
+	@echo Access denied to modify PATH variable in system-space.
+	@echo Trying to modify PATH in user-space...
+	.\bin\setenv -ua path %%%GNUWIN32_INSTALL_DIRECTORY%\bin 
+	@if errorlevel 1 (
+		@echo ERROR!
+	) else (
+		@echo Done!
+	)
+) else (
+	@echo Done!!
 )
 :end
 
