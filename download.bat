@@ -45,9 +45,10 @@ set WGET=bin\wget -nc --no-check-certificate
 @set WGET=%WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip
 @set WGET=%WGET% http://www.codeproject.com/KB/applications/SetEnv/SetEnv_exe.zip
 @set WGET=%WGET% https://cmake.org/files/v3.5/cmake-3.5.2-win32-x86.zip
+@set WGET=%WGET% http://www.aspisys.com/lua53.exe
+rem @set WGET=%WGET% https://github.com/premake/premake-core/releases/download/v5.0.0-alpha11/premake-5.0.0-alpha11-windows.zip -Opremake.zip
 rem @set WGET=%WGET% https://winscp.net/download/WinSCP-5.9.4-Portable.zip
 rem @set WGET=%WGET%  http://www.module.ru/mb7707/soft/libxslt-1.1.26.win32.zip %bypass_rcm_proxy% 
 
-
-
 %WGET%
+bin\wget -nc --no-check-certificate https://github.com/premake/premake-core/releases/download/v5.0.0-alpha11/premake-5.0.0-alpha11-windows.zip -Opremake-5.0.0-alpha11-windows.zip

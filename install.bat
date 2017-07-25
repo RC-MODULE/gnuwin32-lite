@@ -21,12 +21,14 @@ bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY%\bin 7za920.zip
 bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY%\bin putty.zip 
 bin\unzip -p master.zip cecho-master\cecho\bin\Release\cecho.exe  > %GNUWIN32_INSTALL_DIRECTORY%\bin\cecho.exe
 bin\unzip -p pkg-config-lite-0.28-1_bin-win32.zip pkg-config-lite-0.28-1\bin\pkg-config.exe   > %GNUWIN32_INSTALL_DIRECTORY%\bin\pkg-config.exe
-bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% cmake-3.5.2-win32-x86.zip
+rem bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% cmake-3.5.2-win32-x86.zip
+bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY%\bin premake-5.0.0-alpha11-windows.zip
 rem bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% WinSCP-5.9.4-Portable.zip
-
+copy lua53.exe %GNUWIN32_INSTALL_DIRECTORY%\bin\lua53.exe 
 copy .\bin\setenv.exe %GNUWIN32_INSTALL_DIRECTORY%\bin
 copy %GNUWIN32_INSTALL_DIRECTORY%\bin\find.exe %GNUWIN32_INSTALL_DIRECTORY%\bin\gfind.exe
 copy %GNUWIN32_INSTALL_DIRECTORY%\bin\libiconv2.dll %GNUWIN32_INSTALL_DIRECTORY%\bin\libiconv-2.dll
+
 
 xcopy %GNUWIN32_INSTALL_DIRECTORY%\cmake-3.5.2-win32-x86\*.* %GNUWIN32_INSTALL_DIRECTORY%  /E /Q /Y
 rmdir %GNUWIN32_INSTALL_DIRECTORY%\cmake-3.5.2-win32-x86 /S /Q
