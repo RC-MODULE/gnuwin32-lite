@@ -17,6 +17,8 @@ bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% tar-1.13-1-bin.zip
 bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% tar-1.13-1-dep.zip
 bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% gzip-1.3.12-1-bin.zip
 bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% unzip-5.51-1-bin.zip
+bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% libiconv-1.9.2-1-bin.zip
+bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% sed-4.2.1-bin.zip
 bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY%\bin 7za920.zip 
 bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY%\bin putty.zip 
 bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY%\bin premake-5.0.0-alpha11-windows.zip
