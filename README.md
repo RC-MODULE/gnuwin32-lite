@@ -34,14 +34,14 @@ Online installer of full tool set needed for RC-Module project buildings under W
 Clone this project or download [GnuWin32-lite](https://github.com/RC-MODULE/gnuwin32-lite/archive/master.zip) installer.   
 Extract archive and open a command window, switch to the *gnuwin32-lite* directory and run *download.bat*   
 If you are behind proxy you have two choices how to enter proxy-settings:
-  - A. In dialog mode of **download.bat**  
+  - A. In dialog mode of *download.bat*  
   - B. Define your proxy settings in environment variables **http_proxy** and **https_proxy** (with no spaces around =) in command line or put it into *.\wget.ini*
   
 
 
 If *download.bat* completes successfully you will be able to run the installer with a path where to extract tools.   
-*Install.bat* without parameters will extract tools to current */bin* folder.   
-Accept %PATH% modyfication - it will add "installation dir"/bin to the PATH variable.
+*Install.bat* without parameters will extract tools to the current */\bin* folder.   
+Accept %PATH% modyfication - it will add <your_install_dir>\bin to the PATH variable.
 
 For example: 
 ```bat
