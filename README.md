@@ -39,7 +39,7 @@ If you are behind proxy you have two choices how to start download:
 
 
 If *download.bat* completes successfully you will be able to run the installer with a path where to extract tools.   
-**Install.bat** without parameters will extract tools to current **/bin** folder.
+*Install.bat* without parameters will extract tools to current */bin* folder.   
 Accept %PATH% modyfication - it will add "installation dir"/bin to the PATH variable.
 
 For example: 
