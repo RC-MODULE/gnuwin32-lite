@@ -23,6 +23,13 @@ set WGET=bin\wget -nc --no-check-certificate
 
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/make/3.81/make-3.81-bin.zip 
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/make/3.81/make-3.81-dep.zip
+%WGET% http://www.aspisys.com/lua53.exe
+%WGET% https://www.irontcl.com/downloads/irontcl-amd64-8.6.7.zip
+%WGET% https://github.com/premake/premake-core/releases/download/v5.0.0-alpha11/premake-5.0.0-alpha11-windows.zip -Opremake-5.0.0-alpha11-windows.zip
+rem %WGET% https://cmake.org/files/v3.5/cmake-3.5.2-win32-x86.zip
+rem %WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip
+rem %WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip
+
 %WGET% http://sourceforge.net/projects/gnuwin32/files/coreutils/5.3.0/coreutils-5.3.0-bin.zip
 %WGET% http://sourceforge.net/projects/gnuwin32/files/coreutils/5.3.0/coreutils-5.3.0-dep.zip
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/diffutils/2.8.7-1/diffutils-2.8.7-1-bin.zip
@@ -34,26 +41,17 @@ set WGET=bin\wget -nc --no-check-certificate
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/grep/2.5.4/grep-2.5.4-dep.zip
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/wget/1.11.4-1/wget-1.11.4-1-bin.zip
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/wget/1.11.4-1/wget-1.11.4-1-dep.zip
+%WGET% https://sourceforge.net/projects/gnuwin32/files/libiconv/1.9.2-1/libiconv-1.9.2-1-bin.zip
+%WGET% https://downloads.sourceforge.net/project/gnuwin32/sed/4.2.1/sed-4.2.1-bin.zip
+%WGET% https://github.com/elisherer/cecho/archive/master.zip
+%WGET% https://tartarus.org/~simon/putty-snapshots/w64/putty.zip
+%WGET% http://www.codeproject.com/KB/applications/SetEnv/SetEnv_exe.zip
+rem @set WGET=%WGET% https://winscp.net/download/WinSCP-5.9.4-Portable.zip
+rem @set WGET=%WGET%  http://www.module.ru/mb7707/soft/libxslt-1.1.26.win32.zip %bypass_rcm_proxy% 
+
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/tar/1.13-1/tar-1.13-1-bin.zip
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/tar/1.13-1/tar-1.13-1-dep.zip
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/gzip/1.3.12-1/gzip-1.3.12-1-bin.zip
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/unzip/5.51-1/unzip-5.51-1-bin.zip
-%WGET% https://sourceforge.net/projects/gnuwin32/files/libiconv/1.9.2-1/libiconv-1.9.2-1-bin.zip
-%WGET% https://downloads.sourceforge.net/project/gnuwin32/sed/4.2.1/sed-4.2.1-bin.zip
-%WGET% https://github.com/elisherer/cecho/archive/master.zip
-%WGET% http://tartarus.org/~simon/putty-snapshots/x86/putty.zip
 %WGET% http://www.7-zip.org/a/7za920.zip
-rem %WGET% https://cmake.org/files/v3.5/cmake-3.5.2-win32-x86.zip
-rem %WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip
-rem %WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip
-%WGET% http://www.codeproject.com/KB/applications/SetEnv/SetEnv_exe.zip
-%WGET% http://www.aspisys.com/lua53.exe
-%WGET% https://www.irontcl.com/downloads/irontcl-amd64-8.6.7.zip
-%WGET% https://github.com/premake/premake-core/releases/download/v5.0.0-alpha11/premake-5.0.0-alpha11-windows.zip -Opremake-5.0.0-alpha11-windows.zip
 
-rem @set WGET=%WGET% https://github.com/premake/premake-core/releases/download/v5.0.0-alpha11/premake-5.0.0-alpha11-windows.zip -Opremake.zip
-rem @set WGET=%WGET% https://winscp.net/download/WinSCP-5.9.4-Portable.zip
-rem @set WGET=%WGET%  http://www.module.ru/mb7707/soft/libxslt-1.1.26.win32.zip %bypass_rcm_proxy% 
-
-rem %WGET%
-rem bin\wget -nc --no-check-certificate https://github.com/premake/premake-core/releases/download/v5.0.0-alpha11/premake-5.0.0-alpha11-windows.zip -Opremake-5.0.0-alpha11-windows.zip

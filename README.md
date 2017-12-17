@@ -25,8 +25,8 @@ Online installer of full tool set needed for RC-Module project buildings under W
   - [putty/pscp](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 ### Archivators:   
   - [tar](http://gnuwin32.sourceforge.net/packages/gtar.htm)
-  - [unzip](http://gnuwin32.sourceforge.net/packages/unzip.htm)
   - [gzip](http://gnuwin32.sourceforge.net/packages/gzip.htm)
+  - [unzip](http://gnuwin32.sourceforge.net/packages/unzip.htm)
   - [7zip-9.20](http://www.7-zip.org)
 
 
