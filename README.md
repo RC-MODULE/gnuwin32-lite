@@ -1,6 +1,6 @@
 # [GnuWin32-Lite installer](https://github.com/RC-MODULE/gnuwin32-lite)
  
-Online installer of full necessary tool set needed for RC-Module project buildings under Windows OS. 
+Online installer of full tool set needed for RC-Module project buildings under Windows OS. 
 
 ## List of downloading packages:
 ### Script languages & build systems:   
@@ -33,9 +33,10 @@ Online installer of full necessary tool set needed for RC-Module project buildin
 ## Installation 
 Clone this project or download [GnuWin32-lite](https://github.com/RC-MODULE/gnuwin32-lite/archive/master.zip) installer.   
 Extract archive and open a command window, switch to the *gnuwin32-lite* directory and run *download.bat*   
-If you are behind proxy you have two choices how to start download:
-  - A. Define your proxy settings in *.\wget.ini*  
-  - B. Set environment variables **http_proxy** and **https_proxy** (with no spaces around =)
+If you are behind proxy you have two choices how to enter proxy-settings:
+  - A. In dialog mode of **download.bat**  
+  - B. Create *.\wget.ini* and define your proxy settings in environment variables **http_proxy** and **https_proxy** (with no spaces around =)
+  
 
 
 If *download.bat* completes successfully you will be able to run the installer with a path where to extract tools.   
