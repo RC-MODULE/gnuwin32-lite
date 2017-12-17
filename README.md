@@ -35,7 +35,7 @@ Clone this project or download [GnuWin32-lite](https://github.com/RC-MODULE/gnuw
 Extract archive and open a command window, switch to the *gnuwin32-lite* directory and run *download.bat*   
 If you are behind proxy you have two choices how to enter proxy-settings:
   - A. In dialog mode of **download.bat**  
-  - B. Create *.\wget.ini* and define your proxy settings in environment variables **http_proxy** and **https_proxy** (with no spaces around =)
+  - B. Define your proxy settings in environment variables **http_proxy** and **https_proxy** (with no spaces around =) in command line or put it into *.\wget.ini*
   
 
 
