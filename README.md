@@ -3,7 +3,7 @@
 Online installer of full necessary tool set needed for RC-Module project buildings under Windows OS. 
 
 ## List of downloading packages:
-### Script languages & build systems   
+### Script languages & build systems:   
   - [make-3.81](http://gnuwin32.sourceforge.net/packages/make.htm)
   - [premake](https://premake.github.io/)
   - [lua](http://lua-users.org/wiki/LuaBinaries)
@@ -12,18 +12,18 @@ Online installer of full necessary tool set needed for RC-Module project buildin
   - [pkg-config](https://sourceforge.net/projects/pkgconfiglite/files/)
   - [cmake](https://cmake.org)
  -->
-### System [GnuWin32](http://gnuwin32.sourceforge.net/) utilities    
+### System [GnuWin32](http://gnuwin32.sourceforge.net/) utilities:   
   - [coreutils](http://gnuwin32.sourceforge.net/packages/coreutils.htm)
   - [diffutils](http://gnuwin32.sourceforge.net/packages/diffutils.htm)
   - [findutils](http://gnuwin32.sourceforge.net/packages/findutils.htm)
   - [grep](http://gnuwin32.sourceforge.net/packages/grep.htm)
   - [libiconv](http://gnuwin32.sourceforge.net/packages/libiconv.htm) 
-  - [sed] (http://gnuwin32.sourceforge.net/packages/sed.htm)
+  - [sed](http://gnuwin32.sourceforge.net/packages/sed.htm)
   - [setenv](http://www.codeproject.com/Articles/12153/SetEnv)
   - [wget](http://gnuwin32.sourceforge.net/packages/wget.htm)
   - [cecho](https://github.com/elisherer/cecho) - colorized echo
   - [putty/pscp](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
-### Archivators   
+### Archivators:   
   - [tar](http://gnuwin32.sourceforge.net/packages/gtar.htm)
   - [unzip](http://gnuwin32.sourceforge.net/packages/unzip.htm)
   - [gzip](http://gnuwin32.sourceforge.net/packages/gzip.htm)
