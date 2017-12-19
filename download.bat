@@ -19,7 +19,7 @@ set https_proxy=https://%login%:%password%@%proxy%:%port%
 :start
 
 
-set WGET=bin\wget -nc --no-check-certificate
+set WGET=bin\wget -nc --no-check-certificate -t2
 
 @set WGET=%WGET% http://sourceforge.net/projects/gnuwin32/files/coreutils/5.3.0/coreutils-5.3.0-bin.zip
 @set WGET=%WGET% http://sourceforge.net/projects/gnuwin32/files/coreutils/5.3.0/coreutils-5.3.0-dep.zip
