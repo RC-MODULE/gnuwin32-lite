@@ -25,7 +25,7 @@ set WGET=bin\wget -nc --no-check-certificate -t2
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/make/3.81/make-3.81-dep.zip
 %WGET% http://www.aspisys.com/lua53.exe
 %WGET% https://www.irontcl.com/downloads/irontcl-amd64-8.6.7.zip
-%WGET% https://github.com/premake/premake-core/releases/download/v5.0.0-alpha11/premake-5.0.0-alpha11-windows.zip -Opremake-5.0.0-alpha11-windows.zip
+%WGET% https://github.com/premake/premake-core/releases/download/v5.0.0-alpha12/premake-5.0.0-alpha12-windows.zip -Opremake-5.0.0-alpha12-windows.zip
 rem %WGET% https://cmake.org/files/v3.5/cmake-3.5.2-win32-x86.zip
 rem %WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip
 rem %WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip
@@ -39,8 +39,9 @@ rem %WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-con
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/findutils/4.2.20-2/findutils-4.2.20-2-dep.zip
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/grep/2.5.4/grep-2.5.4-bin.zip
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/grep/2.5.4/grep-2.5.4-dep.zip
-%WGET% http://downloads.sourceforge.net/project/gnuwin32/wget/1.11.4-1/wget-1.11.4-1-bin.zip
-%WGET% http://downloads.sourceforge.net/project/gnuwin32/wget/1.11.4-1/wget-1.11.4-1-dep.zip
+rem %WGET% http://downloads.sourceforge.net/project/gnuwin32/wget/1.11.4-1/wget-1.11.4-1-bin.zip
+rem %WGET% http://downloads.sourceforge.net/project/gnuwin32/wget/1.11.4-1/wget-1.11.4-1-dep.zip
+%WGET% https://eternallybored.org/misc/wget/releases/wget-1.19.4-win64.zip
 %WGET% https://sourceforge.net/projects/gnuwin32/files/libiconv/1.9.2-1/libiconv-1.9.2-1-bin.zip
 %WGET% https://downloads.sourceforge.net/project/gnuwin32/sed/4.2.1/sed-4.2.1-bin.zip
 %WGET% https://github.com/elisherer/cecho/archive/master.zip
