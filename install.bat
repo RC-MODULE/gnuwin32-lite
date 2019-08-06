@@ -22,8 +22,11 @@ bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% libiconv-1.9.2-1-bin.zip
 bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% sed-4.2.1-bin.zip
 bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY%\bin 7za920.zip 
 bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY%\bin putty.zip 
-bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY%\bin premake-5.0.0-alpha12-windows.zip
+rem bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY%\bin premake-5.0.0-alpha12-windows.zip
+bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY%\bin premake-5.0.0-alpha14-windows.zip
 bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% irontcl-amd64-8.6.7.zip
+bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% ptime-10.zip
+
 bin\unzip -p master.zip cecho-master\cecho\bin\Release\cecho.exe  > %GNUWIN32_INSTALL_DIRECTORY%\bin\cecho.exe
 
 xcopy %GNUWIN32_INSTALL_DIRECTORY%\IronTcl\*.* %GNUWIN32_INSTALL_DIRECTORY% /E /Q /Y
@@ -40,6 +43,10 @@ rem rmdir %GNUWIN32_INSTALL_DIRECTORY%\cmake-3.5.2-win32-x86 /S /Q
 rem bin\unzip -p pkg-config-lite-0.28-1_bin-win32.zip pkg-config-lite-0.28-1\bin\pkg-config.exe   > %GNUWIN32_INSTALL_DIRECTORY%\bin\pkg-config.exe
 rem bin\unzip -u -o -q -d %GNUWIN32_INSTALL_DIRECTORY% WinSCP-5.9.4-Portable.zip
 
+@choice /M "Do you want to set LANGUAGE=en_US to force messaging of GNU Make in English instead Russian(CP1251)?"
+@if errorlevel 2 goto end0 
+.\bin\setenv -ua LANGUAGE en_US
+:end0 
 
 @echo GnuWin32-lite installation completed!
 @choice /M "Do you want to add "%GNUWIN32_INSTALL_DIRECTORY%\bin" folder to the PATH environment variable"

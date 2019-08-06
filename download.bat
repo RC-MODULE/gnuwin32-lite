@@ -25,7 +25,9 @@ set WGET=bin\wget -nc --no-check-certificate -t2
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/make/3.81/make-3.81-dep.zip
 %WGET% http://www.aspisys.com/lua53.exe
 %WGET% https://www.irontcl.com/downloads/irontcl-amd64-8.6.7.zip
-%WGET% https://github.com/premake/premake-core/releases/download/v5.0.0-alpha12/premake-5.0.0-alpha12-windows.zip -Opremake-5.0.0-alpha12-windows.zip
+rem %WGET% https://github.com/premake/premake-core/releases/download/v5.0.0-alpha12/premake-5.0.0-alpha12-windows.zip -Opremake-5.0.0-alpha12-windows.zip
+rem %WGET% https://github.com/premake/premake-core/releases/download/v5.0.0-alpha13/premake-5.0.0-alpha13-windows.zip -Opremake-5.0.0-alpha13-windows.zip
+%WGET% https://github.com/premake/premake-core/releases/download/v5.0.0-alpha14/premake-5.0.0-alpha14-windows.zip -Opremake-5.0.0-alpha14-windows.zip
 rem %WGET% https://cmake.org/files/v3.5/cmake-3.5.2-win32-x86.zip
 rem %WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip
 rem %WGET% http://downloads.sourceforge.net/project/pkgconfiglite/0.28-1/pkg-config-lite-0.28-1_bin-win32.zip
@@ -55,4 +57,5 @@ rem @set WGET=%WGET%  http://www.module.ru/mb7707/soft/libxslt-1.1.26.win32.zip 
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/gzip/1.3.12-1/gzip-1.3.12-1-bin.zip
 %WGET% http://downloads.sourceforge.net/project/gnuwin32/unzip/5.51-1/unzip-5.51-1-bin.zip
 %WGET% http://www.7-zip.org/a/7za920.zip
+%WGET% http://www.pc-tools.net/files/win32/freeware/ptime-10.zip
 
